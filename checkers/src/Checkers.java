@@ -109,7 +109,7 @@ import java.io.*;
 	
 	public void paintComponent(Graphics g)
 	{
-		// Note my code, given by Ms.Wong for offScreenBuffer
+		// Not my code, given by Ms.Wong for offScreenBuffer
 		// -------------------------------------------------------------------
 		if (offScreenBuffer == null)
 		{
