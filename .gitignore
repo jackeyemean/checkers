@@ -1,0 +1,10 @@
+.settings/
+.classpath
+.project
+.vscode/
+bin/
+*.class
+*.jar
+.DS_Store
+Thumbs.db
+*.log
