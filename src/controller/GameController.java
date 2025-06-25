@@ -1,4 +1,3 @@
-// src/controller/GameController.java
 package controller;
 
 import java.awt.event.*;

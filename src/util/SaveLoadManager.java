@@ -1,4 +1,3 @@
-// src/util/SaveLoadManager.java
 package util;
 
 import java.io.*;
@@ -6,7 +5,7 @@ import java.util.Scanner;
 import model.GameModel;
 
 public class SaveLoadManager {
-    /** Read the boolean from gameSaved.txt (first run → false) */
+    // Read the boolean from gameSaved.txt (first run → false)
     public static boolean readGameSavedFlag() {
         try (Scanner in = new Scanner(new File("gameSaved.txt"))) {
             return Boolean.parseBoolean(in.next());
@@ -15,14 +14,14 @@ public class SaveLoadManager {
         }
     }
 
-    /** Overwrite gameSaved.txt with the given flag */
+    // Overwrite gameSaved.txt with the given flag
     public static void writeGameSavedFlag(boolean flag) {
         try (PrintWriter out = new PrintWriter("gameSaved.txt")) {
             out.print(flag);
         } catch (IOException e) { }
     }
 
-    /** Save the current board & selectedPiece to savedGame.txt */
+    // Save the current board & selectedPiece to savedGame.txt
     public static void saveBoard(GameModel m) {
         try (PrintWriter out = new PrintWriter("savedGame.txt")) {
             int[][] g = m.getGrid();
@@ -35,7 +34,7 @@ public class SaveLoadManager {
         } catch (IOException e) { }
     }
 
-    /** Load board & selectedPiece from savedGame.txt */
+    // Load board & selectedPiece from savedGame.txt
     public static void loadBoard(GameModel m) {
         try (Scanner in = new Scanner(new File("savedGame.txt"))) {
             int[][] g = m.getGrid();

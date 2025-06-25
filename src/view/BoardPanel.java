@@ -1,4 +1,3 @@
-// src/view/BoardPanel.java
 package view;
 
 import javax.swing.*;

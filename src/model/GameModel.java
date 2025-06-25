@@ -1,4 +1,3 @@
-// src/model/GameModel.java
 package model;
 
 public class GameModel {
@@ -38,7 +37,7 @@ public class GameModel {
         consecutiveCapture = moving = false;
     }
 
-    // ───── Getters / Setters ───────────────────────────────────────────────
+    // Getters / Setters 
     public State getGameState()            { return gameState; }
     public void setGameState(State s)      { gameState = s; }
     public boolean isGameSaved()           { return gameSaved; }
@@ -53,7 +52,7 @@ public class GameModel {
     public int getPieceY()                 { return pieceY; }
     public int[][] getGrid()               { return grid; }
 
-    /** Called when the user clicks the board cell (bx,by). */
+    // Called when the user clicks the board cell (bx,by)
     public void handleBoardClick(int bx, int by) {
         if (!moving) {
             if (pieceClicked(bx, by)) {
@@ -73,7 +72,7 @@ public class GameModel {
         }
     }
 
-    // ───── Core Move Logic ─────────────────────────────────────────────────
+    // Core Move Logic
     private int[][] boardUpdater(int x,int y,int px,int py,int[][] g) {
         if (Math.abs(x-px)==2 && Math.abs(y-py)==2) 
             return capture(x,y,px,py,g);
@@ -150,7 +149,7 @@ public class GameModel {
             || (selectedPiece>0 && grid[y][x]>0);
     }
 
-    /** Has any legal move for given turn (-1 black, +1 white)? */
+    // Has any legal move for given turn (-1 black, +1 white)?
     public boolean hasMove(int turn) {
         for (int i=0;i<8;i++) for (int j=0;j<8;j++) {
             int cell = grid[j][i]*turn;

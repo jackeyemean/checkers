@@ -1,4 +1,3 @@
-// src/Checkers.java
 import javax.swing.*;
 import model.GameModel;
 import view.BoardPanel;

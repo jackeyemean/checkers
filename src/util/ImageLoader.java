@@ -1,4 +1,3 @@
-// src/util/ImageLoader.java
 package util;
 
 import java.awt.image.BufferedImage;
