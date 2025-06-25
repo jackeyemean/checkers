@@ -1,9 +1,6 @@
-# Checkers Game
+# Checkers from Scratch!
 
-A classic two-player Checkers (Draughts) game written in Java with a Swing GUI.
-Supports piece movement rules, kinging, saving/loading games, draw offers, and resignation.
-
-![alt text](image.png)  ![alt text](image-1.png)
+![alt text](images/image.png)  ![alt text](images/image-1.png)
 
 ## Features
 
