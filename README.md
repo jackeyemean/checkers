@@ -14,8 +14,12 @@
 
 ## Requirements
 
-- **Java Development Kit (JDK) 8** or newer
-- **Git** (to clone the repo)
+- **Java Development Kit (JDK) 8** or newer  
+  [Download JDK](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html) or use [OpenJDK](https://adoptium.net/temurin/releases/)
+
+- **Git** (to clone the repo)  
+  [Download Git](https://git-scm.com/downloads)
+
 - Java IDE or a terminal
 
 ---
@@ -25,7 +29,7 @@
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/checkers.git
+git clone https://github.com/jackeyemean/checkers.git
 cd checkers
 ```
 
